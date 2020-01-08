@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class User extends Component {
+class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,11 +12,12 @@ class User extends Component {
   render() {
     return (
       <div>
-        <p>{this.state.firstName}</p>
-        <p>{this.state.lastName}</p>
+        <p>First Name: {this.state.firstName}</p>
+        <p>Last Name: {this.state.lastName}</p>
+        <button>Edit</button>
       </div>
     );
   }
 }
 
-export default User;
+export default Form;
