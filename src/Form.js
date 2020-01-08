@@ -42,7 +42,12 @@ class Form extends Component {
         ></Info>
       );
     }
-    return <div>{display}</div>;
+    return (
+      <div>
+        <h1>Form Edit</h1>
+        {display}
+      </div>
+    );
   }
 }
 
